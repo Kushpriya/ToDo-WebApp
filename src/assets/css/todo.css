@@ -8,6 +8,12 @@ h1{
     font-weight: 800;
 }
 
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 #task{
     position: relative;
     justify-content: center;
