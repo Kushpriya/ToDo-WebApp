@@ -1,4 +1,23 @@
-h1{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+.todo-container h1 {
     position: relative;
     color: rgb(56, 20, 163);
     display: flex;
@@ -6,38 +25,84 @@ h1{
     align-items: center;
     font-size: 50px;
     font-weight: 800;
+    margin: 0 0 20px;
 }
 
-.head{
+.head {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 20px;
 }
-#task{
+
+#task {
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color: rgb(251, 254, 253);
+    background-color: white;
     border-radius: 5px;
     font-size: 20px;
-    padding: 10px 50px;
-
-    /* margin-left: 450px; */
+    padding: 10px;
+    width: calc(100% - 120px);
+    box-sizing: border-box;
 }
 
-button{
-    position: relative;
+.display {
+    list-style-type: decimal;
+    padding: 5px;
+    font-size: 25px;
+    margin: 20px;
+
+}
+
+.display li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.display li div {
+    display: inline-block;    
+}
+
+.display li:last-child {
+    border-bottom: none;
+}
+
+.add, .edit, .del, .update {
     justify-content: center;
     align-items: center;
-    font-size: 20px;
-    margin: 20px;
-    width: 90px;
-    height: 45px;
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px 20px;
     background-color: rgb(10, 10, 186);
-    color:white;
-    box-shadow:black (0,0,0,1);
+    color: white;
     border-radius: 5px;
     border: none;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0,0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.add {
+    background-color: rgb(50, 6, 224);
+}
+
+.update {
+    background-color: #007bff;
+}
+
+.edit {
+    background-color: #ffc107;
+}
+
+.del {
+    background-color: #dc3545;
+}
+
+.edit-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
