@@ -49,22 +49,29 @@ body {
 
 .display {
     list-style-type: decimal;
-    padding: 5px;
+    padding: 10px;
     font-size: 25px;
     margin: 20px;
-
 }
 
 .display li {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0 0rem;
     border-bottom: 1px solid #ccc;
 }
 
-.display li div {
-    display: inline-block;    
+
+.btn{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 150px;
+    top: 50%;
+    transform: translateY(-40%);
+    display: flex;
+    gap: 10px;
 }
 
 .display li:last-child {
